@@ -20,6 +20,19 @@ $("#createTodo").on("click", function () {
     $("#newTodo").val(""); // reset input box
   }
 });
+// add todo on pressing "enter"
+$("input").keypress(function (event) {
+  if (event.which === 13) {
+    if ($("#newTodo").val() === "") return;
+    const newTodoName = $("#newTodo").val();
+    $("ul").prepend(
+      "<li><div class='flex-row'><p>" +
+        newTodoName +
+        "</p><i class='fa fa-remove cross'></i></div></li>"
+    );
+    $("#newTodo").val("");
+  }
+});
 
 // delete todo
 $(".fa-remove").on("click", function () {
