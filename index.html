@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Todo using jQuery</title>
+    <link rel="stylesheet" href="/style.css"></link>
+  </head>
+  <body>
+    <h1 class="font-bold">Todo Manager</h1>
+    <div style="align-items: center;">
+        <div class="flex-col">
+            <div class="flex-row" id="addTodo">
+            <input id="newTodo" type="text" placeholder="What's next?">
+            <button id="createTodo">Add Todo</button>
+            </div>
+            <button style="margin-top: 1%;" id="addTodoToggle">Hide</button>
+        </div>
+        
+        
+        <div id="todos">
+            <ul>
+                <li>
+                    <div class="flex-row">
+                        <p>Todo 1</p>
+                        <i class="fa fa-remove cross"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex-row">
+                        <p>Todo 2</p>
+                        <i class="fa fa-remove cross"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex-row">
+                        <p>Todo 3</p>
+                        <i class="fa fa-remove cross"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="/script.js"></script>
+  </body>
+</html>
